@@ -1,0 +1,161 @@
+* { 
+    font-family: sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    min-height: 1300px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+h3, h4 {
+    margin-bottom: 5px;
+}
+
+#side-bar {
+    background-color: dodgerblue;
+    color: white;
+     display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#dash-logo {
+   font-size: 27px;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+li {
+    font-size: 42px;
+}
+
+#article {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 30px;
+    margin: 0px 30px 30px 30px;
+}
+
+.card {
+    padding: 10px 30px;
+    background-color: white;
+    min-height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 20%);
+    
+}
+
+#article .card {
+    border-left: 10px solid yellowgreen;
+    min-height: 300px;
+
+}
+
+#content {
+   display: grid;
+   grid-template-rows: 1.5fr 6fr;
+}
+
+#main-content {
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: tomato;
+}
+
+#upper-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.main-name, .user-name, .hey {
+    font-weight: 600;
+}
+
+.main-name {
+    font-size: 30;
+}
+
+.user-name {
+    font-size: 30px;
+}
+
+#right-panels {
+    display: grid;
+    padding-right: 40px;
+    grid-template: 1fr 1fr / 1fr;
+}
+
+p {
+    color: gray;
+    margin-top: 0px;
+}
+
+#article .card p {
+    font-size: 25px;
+}
+
+#announcements .card {
+    min-height: 460px;
+    font-size: 17px;
+}
+
+#trending .card {
+    min-height: 430px;
+}
+
+#bottom-header button {
+    border-radius: 45px;
+    padding: 15px 40px 15px 40px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    font-size: 25px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+#projects, #trending, #announcements {
+    margin-top: 20px;
+}
+
+#projects header {
+    margin-left: 30px;
+}
+
+.announce {
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightgrey;
+}

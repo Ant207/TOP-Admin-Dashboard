@@ -13,7 +13,7 @@ h2{
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 h4 {
@@ -28,29 +28,57 @@ h3, h4 {
     color: white;
      display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 
 #dash-logo {
-   font-size: 27px;
+   font-size: 20px;
+   padding-left: 25px;
 }
 
+.icons {
+    fill: white;
+    height: 30px;
+    width: 30px;
+    vertical-align: bottom;
+}
+
+#left-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 75px;
+}
+
+.big-icon {
+    fill: yellowgreen;
+    width: 100px;
+    height: 100px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
 
 ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 35px;
 }
 
 li {
-    font-size: 42px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 #article {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
-    gap: 30px;
+    gap: 10px;
     margin: 0px 30px 30px 30px;
 }
 
@@ -88,19 +116,42 @@ li {
     justify-content: center;
 }
 
+#top-header .icons {
+    fill: yellowgreen;
+}
+
+#top-header {
+    display: grid;
+    grid-template-columns: 4fr .5fr .5fr 1fr;
+    justify-items: center;
+}
+
+.user-info p {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+}
+
 #bottom-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
+#site-search {
+    width: 800px;
+    border-radius: 20px;
+    border: none;
+    background-color: tomato;
+}
 
 .main-name, .user-name, .hey {
     font-weight: 600;
 }
 
 .main-name {
-    font-size: 30;
+    font-size: 20px;
 }
 
 .user-name {
@@ -119,16 +170,19 @@ p {
 }
 
 #article .card p {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 #announcements .card {
     min-height: 460px;
     font-size: 17px;
+    display: flex;
+    flex-direction: column;
 }
 
 #trending .card {
-    min-height: 430px;
+    min-height: 390px;
+    max-height: 390px;
 }
 
 #bottom-header button {
@@ -158,4 +212,66 @@ p {
 .announce {
     padding-bottom: 5px;
     border-bottom: 2px solid lightgrey;
+}
+
+.duck {
+    width: 75px;
+    height: 75px;
+    fill: white;
+    vertical-align: bottom;
+}
+
+.trending-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 60px;
+}
+
+#trending .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.card .icons {
+    fill: red;
+    width: 50px;
+    height: 50px;
+}
+
+.trending-text {
+    color: grey;
+    font-size:18px;
+    white-space: nowrap;
+}
+
+.trending-item p {
+    margin: 0;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 90px;
+}
+
+.btn-one, .btn-two, .btn-thr {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-one svg,
+.btn-two svg,
+.btn-thr svg {
+    width: 50px;
+    height: 50px;
+    fill: yellowgreen;
 }
